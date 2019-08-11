@@ -32,7 +32,7 @@ Follow these steps for completing your project.
 
 ## Commits
 
-Commit your code regularly and use descriptive messages. This helps both you (in case you ever need to return to old code) and your Team Lead.
+Commit your code regularly and use descriptive messages. This helps both you (in case you ever need to return to old code for any number of reasons and your Team Lead).
 
 ## Self-Study/Essay Questions
 
@@ -40,27 +40,47 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+// =======================//
+I learned how to build out a restful api, along with using expresses router.
+//=======================//
+
 - [ ] What is Express Middleware?
+
+//========================================================//
+Functions you can chain and use to manage your app
+//========================================================//
 
 - [ ] How can a client send data to an API?
 
+//=============================================//
+Client side on react you interact with the api with axios
+//=============================================//
+
 - [ ] What can the API return to help clients know if a request was successful?
+
+//=============================================//
+response(200||201)
+//=============================================//
 
 - [ ] What Express feature can we use to partition an application into sub-applications?
 
+//====================================//
+Middleware
+//====================================//
+
 ## Minimum Viable Product
 
-- [ ] Configure an _npm script_ named _"server"_ that will execute your code using _nodemon_. Make _nodemon_ be a development time dependency only, it shouldn't be deployed to production.
-- [ ] Configure an _npm script_ named _"start"_ that will execute your code using _node_.
-- [ ] Write endpoints to manage (CRUD) **chores**.
-- [ ] Hard code an array with a few **people**. No need to write endpoints to manage them.
-- [ ] Write an endpoint that accepts a person's `id` and returns the list of **chores** for the person. if a person with that `id` does not exist in the **people** array, the endpoint should return a `404` status code and a message. If the person exists, but has no **chores** assigned, return an empty array.
-- [ ] Add support for a `query string parameter` called _completed_ to the endpoint that returns the list of chores. When the client sends this query string parameter, and the value is `true`, the endpoint should return the list of completed chores. If the value of the query string parameter is `false`, the endpoint should return chores where completed is `false`. If the query string parameter is not sent, the endpoint should return all chores.
+- [+] Configure an _npm script_ named _"server"_ that will execute your code using _nodemon_. Make _nodemon_ be a development time dependency only, it shouldn't be deployed to production.
+- [+] Configure an _npm script_ named _"start"_ that will execute your code using _node_.
+- [+] Write endpoints to manage (CRUD) **chores**.
+- [+] Hard code an array with a few **people**. No need to write endpoints to manage them.
+- [+] Write an endpoint that accepts a person's `id` and returns the list of **chores** for the person. if a person with that `id` does not exist in the **people** array, the endpoint should return a `404` status code and a message. If the person exists, but has no **chores** assigned, return an empty array.
+- [+] Add support for a `query string parameter` called _completed_ to the endpoint that returns the list of chores. When the client sends this query string parameter, and the value is `true`, the endpoint should return the list of completed chores. If the value of the query string parameter is `false`, the endpoint should return chores where completed is `false`. If the query string parameter is not sent, the endpoint should return all chores.
 - [ ] Deploy the API to _heroku_ and send the URL to your TL.
 
 ### Resources (People and Chores)
 
-Store the data about **people** and **chores** using arrays.
+Store the data about **people** and **chores** in memory using arrays.
 
 For **people** store the following information:
 
@@ -83,7 +103,7 @@ When saving a chore, check that there is a person with an `id` that matches the 
 
 ## Stretch Goal
 
-- [ ] Write endpoints to manage **people**.
+- [+] Write endpoints to manage **people**.
 - [ ] Write an endpoint to find a person by id that returns an object with all the chores assigned to that person. Example:
 
 ```js
@@ -109,7 +129,7 @@ When saving a chore, check that there is a person with an `id` that matches the 
 }
 ```
 
-- [ ] Use `create-react-app` to create an application in a separate folder (outside the API project folder). Name it anything you want.
+- [+] Use `create-react-app` to create an application in a separate folder (outside the API project folder). Name it anything you want.
 - [ ] From the React application show a list of **people** using the API you built.
 - [ ] Add functionality to show the details of a person, including its chores, when clicking a person name in the list. Use React Router to navigate to a separate route to show the person details.
 - [ ] Add styling! Perhaps with [`styled-components`](https://www.styled-components.com/) or [emotion](https://emotion.sh/docs/introduction)
